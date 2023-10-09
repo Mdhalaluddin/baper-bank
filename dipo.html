@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dipogit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <head>
+        <h1 class="text-5xl font-bold text-center mt-14">Let's get some <span class="text-red-400 ">
+                Moooooooooooney!!!</span></h1>
+    </head>
+    <main>
+        <div class="grid grid-cols-3 gap-1 mt-5 text-white mb-10">
+            <div class="mx-auto w-9/12 mt-5 bg-lime-300 p-10 rounded-lg ">
+                <p class="text-2xl font-samibold">deposit</p>
+                <h2 class="text-5xl font-bold">$<span id="total-deposit">00</span></h2>
+            </div>
+            <div class="mx-auto w-9/12 mt-5 bg-amber-400 p-10 rounded-lg ">
+                <p class="text-2xl font-samibold">Withdraw</p>
+                <h2 class="text-5xl font-bold">$<span id="withdraw-amount">00</span></h2>
+            </div>
+            <div class="mx-auto w-9/12 mt-5 bg-lime-500 p-10 rounded-lg ">
+                <p class="text-2xl font-samibold">Balance</p>
+                <h2 class="text-5xl font-bold">$<span id="total-amount">1240</span></h2>
+            </div>
+        </div>
+        <section class="mb-30 mt-10">
+            <div class="grid grid-cols-2 gap-1 mt-5 text-white mb-30">
+                <div class="mx-auto w-10/12 mt-5 bg-cyan-300 p-10 rounded-lg ">
+                    <p class="text-3xl font-bold">Please deposit</p>
+                    <input type="text" class="text-black block w-10/12 mt-5 rounded-mb mx-10"
+                        placeholder="$ amount you went to deposit" id="deposit-item">
+                    <button id="btn-deposit"
+                        class="hover:bg-red-300 mx-10 text-1xl text-white font-samibold rounded-lg mt-5 px-5 py-2 bg-green-500">deposit</button>
+                </div>
+                <div class="mx-auto w-10/12 mt-5 bg-violet-400 p-10 rounded-lg ">
+                    <p class="text-3xl font-bold">please Withdraw</p>
+                    <input type="text" class="text-black block w-10/12 mt-5 rounded-mb mx-10 "
+                        placeholder="$ amount you went to withdraw" id="Withdraw-item">
+                    <button id="btn-withdraw"
+                        class="hover:bg-red-500 mx-10 text-1xl text-white font-samibold rounded-lg mt-5 px-5 py-2 bg-green-500">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdra.js"></script>
+</body>
+
+</html>
